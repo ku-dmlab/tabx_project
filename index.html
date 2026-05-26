@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en" class="fontawesome-i2svg-active fontawesome-i2svg-complete">
+
+<head>
+  <meta property="og:title" content="TABX">
+  <meta property="og:description" content="Totally Accelerated Battle Simulator in JAX (TABX)">
+  <meta property="og:url" content="https://arxiv.org/abs/2602.01665">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="description"
+    content="Totally Accelerated Battle Simulator in JAX (TABX) is a rapid, flexible, and easily configurable sandbox for MARL.">
+  <meta name="keywords"
+    content="TABX, multi-agent reinforcement learning, MARL, simulator">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="./image_assets/logo/favicon.svg">
+  <!-- <link rel="SHORTCUT ICON" href="../images/hn.jpg" type="image/x-icon"> -->
+  <title>TABX</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="./static/js/index.js"></script>
+
+  <link href="./assets/css" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/dropdown.css">
+  <link rel="stylesheet" href="./assets/css/bulma.min.css">
+  <link rel="stylesheet" href="./assets/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./assets/css/bulma-slider.min.css">
+
+  <link rel="stylesheet" href="./assets/css/tab_gallery.css">
+  <link rel="stylesheet" href="./assets/css/academicons.min.css">
+  <link rel="stylesheet" href="./assets/css/index.css">
+  <link rel="stylesheet" href="./assets/css/juxtapose.css">
+  <link rel="stylesheet" href="./assets/css/image_card_fader.css">
+  <link rel="stylesheet" href="./assets/css/image_card_slider.css">
+  <link rel="stylesheet" href="./assets/css/gallery.css">
+
+  <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+</head>
+
+<body>
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+
+            <h1 class="title is-1 publication-title"
+              style="font-family: 'Google Lexend', sans-serif; margin-bottom: 20px;">
+              TABX
+            </h1>
+            <h2 class="title is-2 publication-title"
+              style="font-family: 'Google Lexend', sans-serif ;font-weight: normal; color: #696969;">
+              A High-Throughput Sandbox Battle Simulator for Multi-Agent Reinforcement Learning
+            </h2>
+            <h3 class="title is-4 publication-title"
+              style="font-family: 'Google Lexend', sans-serif ;font-weight: normal; color: #696969;">
+              ICML 2026
+            </h3>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="https://hy-kiera.gitbook.io/hayeong">Hayeong Lee</a><sup>*1</sup>,
+                <a href="https://scholar.google.com/citations?user=mklwOMMAAAAJ&hl=ko">JunHyeok Oh</a><sup>*1</sup>,
+                <a href="https://dmlab.korea.ac.kr/professor.html">Byung-Jun Lee</a><sup>1,2</sup>
+              </span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>Korea University,</span>
+              <span class="author-block"><sup>2</sup>Gauss Labs Inc.</span>
+            </div>
+
+            <div class="is-size-6 publication-authors">
+              <span class="author-block"><sup>*</sup> Equal contribution</span>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2602.01665" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+
+                <span class="link-block">
+                  <a href="https://github.com/ku-dmlab/TABX"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section" style="background-color: #f5f5f5;">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              The design of environments plays a critical role in
+            shaping the development and evaluation of cooperative multi-agent reinforcement learning (MARL)
+            algorithms. While existing benchmarks highlight
+            critical challenges, they often lack the modularity required to design custom evaluation scenarios. We introduce the <i>Totally Accelerated Battle Simulator in JAX (TABX)</i>, a high-throughput
+            sandbox designed for reconfigurable multi-agent
+            tasks. TABX provides granular control over environmental parameters, permitting a systematic investigation into emergent agent behaviors and algorithmic trade-offs across a diverse spectrum of
+            task complexities. Leveraging JAX for hardwareaccelerated execution on GPUs, TABX enables
+            massive parallelization and significantly reduces
+            computational overhead. By providing a fast, extensible, and easily customized framework, TABX
+            facilitates the study of MARL agents in complex structured domains and serves as a scalable foundation for future research.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">TABX Scenarios</h2>
+      <div class="columns is-centered has-text-centered is-multiline">
+        <div class="column is-4">
+          <img src="./image_assets/gif_demo/clover.gif" alt="clover"
+            style="width: 100%; height: auto;">
+          <p class="content has-text-centered is-size-7 mt-2">clover</p>
+        </div>
+        <div class="column is-4">
+          <img src="./image_assets/gif_demo/crossfire.gif" alt="crossfire"
+            style="width: 100%; height: auto;">
+          <p class="content has-text-centered is-size-7 mt-2">crossfire</p>
+        </div>
+        <div class="column is-4">
+          <img src="./image_assets/gif_demo/ribbon.gif" alt="ribbon"
+            style="width: 100%; height: auto;">
+          <p class="content has-text-centered is-size-7 mt-2">ribbon</p>
+        </div>
+        <div class="column is-4">
+          <img src="./image_assets/gif_demo/superking.gif" alt="superking"
+            style="width: 100%; height: auto;">
+          <p class="content has-text-centered is-size-7 mt-2">superking</p>
+        </div>
+        <div class="column is-4">
+          <img src="./image_assets/gif_demo/grid.gif" alt="grid"
+            style="width: 100%; height: auto;">
+          <p class="content has-text-centered is-size-7 mt-2">grid</p>
+        </div>
+        <div class="column is-4">
+          <img src="./image_assets/gif_demo/bypass.gif" alt="bypss"
+            style="width: 100%; height: auto;">
+          <p class="content has-text-centered is-size-7 mt-2">bypass</p>
+        </div>
+      </div>
+      <div class="content has-text-justified">
+        <p>
+          <b>Representative designed scenarios</b>. Each agent possesses a partial, fan-shaped observation field oriented 
+          along its facing direction, analogous to a firstperson perspective. 
+          Colored ellipses represent terrain zones with distinct functional effects, such as movement speed reduction or visibility occlusions. 
+          Allies are denoted by a red outline, while enemies are indicated by a green outline.
+          Within this field, agents observe the current status (e.g., remaining health points), specifications of all visible units, and
+          terrain zone information. As a result, agents must actively
+          rotate and navigate the environment to detect and engage
+          enemies effectively.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background-color: #f5f5f5;">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">Distinguishable TABX Properties</h2>
+      <div class="content">
+        <h4 class="title is-4">1. Configurable Free Parameters</h4>
+        <div class="content has-text-justified">
+          <p>
+            TABX offers a diverse set of environmental parameters that
+            enable custom configurations to address specific research
+            questions, such as evaluating the fundamental properties
+            and generalization of various MARL algorithms. These parameters span four primary dimensions of the environment:
+            <b>unit specifications</b>, <b>environmental zones</b>, <b>heuristic policy
+            parameters</b>, and <b>physical dynamics</b>. In TABX, these parameters are dynamically reconfigurable, allowing environment conditions to be varied across episodes without code
+            modification or recompilation.
+          </p>
+        </div>
+        <div class="columns is-centered has-text-centered is-multiline">
+          <div class="column">
+            <img src="./image_assets/image_demo/scenario_editor.png" alt="scenario_editor"
+              style="width: 68%; height: auto;">
+            <p class="content has-text-centered is-size-7 mt-2">Scenario GUI Editor</p>
+          </div>
+        </div>
+        <div class="content has-text-justified">
+          <p>
+            The interface enables visual authoring of scenarios by allowing users to place
+            ally and enemy units, configure unit specifications, and define
+            environmental zones with adjustable functional effects. The editor
+            provides direct access to key environment parameters through an
+            interactive, code-free workflow.
+          </p>
+        </div>
+        </div>
+
+      <div class="content">
+        <h4 class="title is-4">2.  Non-targeting Mechanism</h4>
+        <div class="content has-text-justified">
+          <div class="columns is-centered has-text-centered is-multiline">
+            <div class="column">
+              <img src="./image_assets/image_demo/dynamics.png" alt="dynamics"
+                style="width: 42%; height: auto;">
+              <p class="content has-text-centered is-size-7 mt-2">Interaction Dynamics</p>
+            </div>
+          </div>
+          <div class="content has-text-justified">
+            <p>
+              A distinguishing aspect of TABX is its unit interaction system, which incorporates <i>non-targeted attack and healing mechanisms</i>.
+              Each unit is associated with a forward-facing rectangular hurtbox 
+              of length \(L\), corresponding to its attack range, and bounded laterally by the field of view (FoV). An attack is registered whenever 
+              a target unit's circular body collider intersects the hurtbox.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <h4 class="title is-4">3.  Role-Appropriate Heuristic Policy</h4>
+        <div class="content has-text-justified">
+          <div class="columns is-centered has-text-centered is-multiline">
+            <div class="column">
+              <img src="./image_assets/image_demo/heuristic_policy.png" alt="heuristic_policy"
+                  style="width: 80%; height: auto;">
+                <p class="content has-text-centered is-size-7 mt-2">Operation of TABX heuristic policy</p>
+            </div>
+          </div>
+          <div class="content has-text-justified">
+            <p>
+              We propose a role-appropriate heuristic policy wherein each unit attribute contributes an independent behavioral bias. 
+              The final action of a unit emerges from the composition of these role-specific primitives, allowing for the generation of diverse 
+              and sophisticated adversarial behaviors. We define three orthogonal role classes: Ranger, Assassin, and Healer. These
+    roles are mapped from intrinsic unit attributes, namely attack range, movement speed, and attack damage polarity. These
+    classes are non-mutually exclusive, allowing a single agent to embody multiple roles—for instance, a high-mobility unit with
+    long-range capabilities is categorized as both a Ranger and an Assassin. Each role imparts a distinct behavioral tendency;
+    the agent's final action emerges from the composition of these role-specific logics within a unified decision-making pipeline.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background-color: #f5f5f5;">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">Experiments</h2>
+      <div class="content">
+        <h4 class="title is-4">1. Benchmarks of MARL Algorithms</h4>
+        <div class="columns is-centered has-text-centered is-multiline">
+          <img src="./image_assets/image_demo/performance_comparison_episode_wins.png" alt="main"
+            style="width: 100%; height: auto;">
+        </div>
+        <p class="has-text-justified">
+          An evaluation of various MARL baselines shows that while MAPPO and IPPO generally perform well, 
+          IPPO outperforms MAPPO in specific scenarios like crossfire and ambush, proving that centralized value learning is not universally 
+          advantageous. Among value-based methods, QMIX consistently beats IQL because its structured value decomposition network effectively 
+          facilitates coordination under shared rewards. Overall, scenarios within the TABX environment require extensive training due to complex 
+          spatial interactions and partial observability.
+        </p>
+      </div>
+      <div class="content">
+        <h4 class="title is-4">2.  Zero-shot Generalization</h4>
+        <div class="columns is-centered has-text-centered is-multiline">
+          <img src="./image_assets/image_demo/ued_average.png" alt="ued"
+            style="width: 62%; height: auto;">
+        </div>
+        <p class="has-text-justified">
+          To evaluate multi-agent zero-shot generalization, researchers integrated UED algorithms with the MAPPO framework using two parameter 
+          categories: environmental zone layouts and agent-level unit specifications (health, speed, and attack damage). While most baselines 
+          successfully generalized to unseen spatial terrain layouts, they significantly struggled with unseen unit configurations, resulting 
+          in average win rates dropping below 50%. This performance gap arises because high-dimensional unit parameters directly alter 
+          controllable dynamics, scaling with the number of agents and destabilizing existing UED adaptive curricula. Ultimately, TABX 
+          demonstrates that generalizing across agent attributes introduces a qualitatively distinct and open challenge compared to the 
+          spatial generalization focused on by existing benchmarks.
+        </p>
+      </div>
+      <div class="content">
+        <h4 class="title is-4">3.  Scalability of TABX</h4>
+        <div class="columns is-centered has-text-centered is-multiline">
+          <div class="column is-6">
+            <img src="./image_assets/image_demo/tabx_scalability.png" alt="tabx_scalability"
+              style="width: 100%; height: auto;">
+              <p class="content has-text-centered is-size-7 mt-2">Scalability of TABX with increasing numbers of parallel environments</p>
+          </div>
+          <div class="column is-6">
+            <img src="./image_assets/image_demo/scalability_with_compile.png" alt="scalability_with_compile"
+              style="width: 100%; height: auto;">
+              <p class="content has-text-centered is-size-7 mt-2">Speed comparison between TABX and SMAX with an increasing number of parallel environments</p>
+          </div>
+        </div>
+        <p class="has-text-justified">
+          To evaluate multi-agent zero-shot generalization, researchers integrated UED algorithms with the MAPPO framework using two parameter 
+          categories: environmental zone layouts and agent-level unit specifications (health, speed, and attack damage). While most baselines 
+          successfully generalized to unseen spatial terrain layouts, they significantly struggled with unseen unit configurations, resulting 
+          in average win rates dropping below 50%. This performance gap arises because high-dimensional unit parameters directly alter 
+          controllable dynamics, scaling with the number of agents and destabilizing existing UED adaptive curricula. Ultimately, TABX 
+          demonstrates that generalizing across agent attributes introduces a qualitatively distinct and open challenge compared to the 
+          spatial generalization focused on by existing benchmarks.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+        <img src="./image_assets/image_demo/tabx_logo.png" alt="Author Photo" class="footer-logo"
+          style="max-width: 128px; height: auto; border-radius: 50%; display: block; margin: 0 auto;">
+      </div>
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p class="has-text-centered">
+              Website template adapted from the <a href="https://github.com/microsoft/BiomedParse/tree/project_page"
+                target="_blank" rel="noopener">BiomedParse project page</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./assets/js/juxtapose.js"></script>
+  <script src="./assets/js/popper.min.js"></script>
+  <script src="./assets/js/jquery.min.js"></script>
+  <script src="./assets/js/bootstrap.min.js"></script>
+  <script defer="" src="./assets/js/fontawesome.all.min.js"></script>
+  <script src="./assets/js/bulma-carousel.min.js"></script>
+  <script src="./assets/js/bulma-slider.min.js"></script>
+  <script src="./assets/js/dropdown.js"></script>
+
+</body>
+
+</html>
