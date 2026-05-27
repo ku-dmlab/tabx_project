@@ -303,11 +303,15 @@
           <div class="column is-6">
             <img src="./image_assets/image_demo/scalability_with_compile.png" alt="scalability_with_compile"
               style="width: 100%; height: auto;">
-              <p class="content has-text-centered is-size-7 mt-2">Speed comparison between TABX and SMAX with an increasing number of parallel environments</p>
+              <p class="content has-text-centered is-size-7 mt-2">Speed comparison between TABX and SMAX, including JIT compilation overhead, with an increasing number of parallel environments</p>
           </div>
         </div>
         <p class="has-text-justified">
-          
+          By leveraging JAX-based vectorization on a single GPU, TABX scales near-linearly with the number of parallel environments,
+          sustaining high throughput even as the unit count grows from 11 to 57 units. Compared against SMAX under matched conditions,
+          TABX achieves higher steps/sec across all tested configurations, with the advantage widening as the number of parallel environments
+          increases. Crucially, TABX supports dynamic reconfiguration of scenarios across episodes <i>without</i> JIT recompilation overhead,
+          making it practical for workloads that require frequent scenario changes, such as UED, curriculum learning, and large-scale ablations.
         </p>
       </div>
     </div>
